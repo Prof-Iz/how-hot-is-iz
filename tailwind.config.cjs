@@ -2,7 +2,10 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./src/**/*.svelte', './src/**/*.css'],
-  darkMode: false,
+  darkMode: true,
+  daisyui: {
+    themes: ['luxury']
+  },
   theme: {
     colors: {
       white: colors.white,
@@ -13,5 +16,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
