@@ -271,6 +271,15 @@
 	body_text={'So we set out to make our IoT Project Related to his comfort'}
 />
 
+<Hero
+	img_url={'esp.jpg'}
+	main_text={'Setting up our own Thingspeak Project: Channel 1674983'}
+	body_text={'A thingspeak Project was set up as shown in the picture. Just a simple ESP8266 and a sensor we had \
+	lying around - but it is perfect for our needs. Only if Rayden had this sensor then we would know if he was hot or not.\
+	Since the channel was made with the express purpose of getting an A in Data Communication, we will not worry about how\
+	hot IZ is after Monday. Rayden is free to take this sensor if he wants. DM me please.'}
+/>
+
 <!-- Graph for realtime base results -->
 <div class="md:px-10 px-3 grid grid-cols-1 md:grid-cols-2 bg-base-200 gap-y-3">
 	<div class="flex flex-col mb-2">
