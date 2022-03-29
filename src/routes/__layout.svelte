@@ -10,6 +10,6 @@
 
 <footer class="footer footer-center p-4 bg-base-300 text-base-content">
 	<div>
-		<p>Copyright © 2022 by LILKNEE - C.IA</p>
+		<p>Website Designed by Ibrahim Izdhan with Data processed by Choy Juen Jet</p>
 	</div>
 </footer>
