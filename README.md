@@ -12,7 +12,7 @@ A simple IoT page made to collect data from a DHT 11 sensor and sync it with MAT
 
 
 
-![](D:\Projects\Project_README\how-hot-is-iz\images_readme\2022-05-05-06-59-17-image.png)
+![](images_readme\2022-05-05-06-59-17-image.png)
 
 ## Tech Stack Used
 
