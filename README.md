@@ -1,40 +1,39 @@
-# create-svelte
+# How Hot is Iz? 🔗 https://how-hot-is-iz.vercel.app/
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Last Edited: March 30 2022
 
-## Creating a project
+Tags:    `node` `sveltekit` `thingspeak` `matlab`
 
-If you're seeing this, you've probably already done this step. Congrats!
+Status: ✅ Fully Complete
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## What is this?
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+A simple IoT page made to collect data from a DHT 11 sensor and sync it with MATLAB Thingspeak. Mathematical analysis was done on the collected data and embedded in the app using Thingspeak visualizations. Graph was made with [Apex Charts](https://github.com/galkatz373/svelte-apexcharts) for interactivity.
 
-> Note: the `@next` is temporary
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+![](D:\Projects\Project_README\how-hot-is-iz\images_readme\2022-05-05-06-59-17-image.png)
 
-```bash
-npm run dev
+## Tech Stack Used
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+| Section   | Technology Used                   |
+|:--------- |:--------------------------------- |
+| Front End | Sveltekit, Tailwind CSS, Daisy UI |
+| Back End  | Node, Vercel                      |
+| Database  | Thingspeak                        |
 
-## Building
+## Current Issues
 
-To create a production version of your app:
+1. As the data is retrieved from Thingspeak API, to mimic real-time functionality a function is run every 30 seconds after the initial data fetching to hydrate the graph if it is a new point. However, this refresh causes the graph to zoom out if it is zoomed in. Solution maybe to use another charting package like Chart JS.
 
-```bash
-npm run build
-```
+2. The Thingspeak API has a limit of 8000 points. Thus if we want all the points we need to chain multiple requests. However 8000 points causes a significant performance drop in the graph interactivity. Therefore we only take average daily values on initial page load.
 
-You can preview the production build with `npm run preview`.
+## Future Plans
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+As the project was done for the Data Communication and Networking Course in University - and it fulfilled the requirements - no follow up will be made for this project.
+
+____
+
+### Socials
+
+[LinkedIn](https://www.linkedin.com/in/ibrahimizdhanofficial/)
